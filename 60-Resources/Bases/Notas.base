@@ -1,0 +1,39 @@
+filters:
+  and:
+    - 'type != null'
+    - '!file.inFolder("80-Templates")'
+properties:
+  type:
+    displayName: Tipo
+  updated:
+    displayName: Atualizado
+  tags:
+    displayName: Tags
+views:
+  - type: table
+    name: "Todas as notas por tipo"
+    groupBy:
+      property: type
+      direction: ASC
+    order:
+      - file.name
+      - updated
+      - tags
+  - type: table
+    name: "Notas permanentes"
+    filters:
+      and:
+        - 'type == "permanent"'
+    order:
+      - file.name
+      - origem
+      - updated
+  - type: table
+    name: "Inbox e fleeting a processar"
+    filters:
+      or:
+        - file.inFolder("00-Inbox")
+        - file.inFolder("10-Fleeting")
+    order:
+      - file.name
+      - updated

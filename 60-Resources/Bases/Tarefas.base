@@ -1,0 +1,60 @@
+filters:
+  and:
+    - 'type == "task"'
+properties:
+  id:
+    displayName: ID
+  prioridade:
+    displayName: Prioridade
+  track:
+    displayName: Track
+  criterio:
+    displayName: Critério
+  status:
+    displayName: Situação
+  deadline:
+    displayName: Prazo
+views:
+  - type: table
+    name: "Críticas e altas em aberto"
+    filters:
+      and:
+        - 'status != "done"'
+        - or:
+            - 'prioridade == "critica"'
+            - 'prioridade == "alta"'
+    order:
+      - deadline
+      - id
+      - file.name
+      - prioridade
+      - criterio
+  - type: table
+    name: "Por track"
+    groupBy:
+      property: track
+      direction: ASC
+    order:
+      - id
+      - file.name
+      - prioridade
+      - status
+      - deadline
+  - type: table
+    name: "Linha de prazo"
+    filters:
+      and:
+        - 'status != "done"'
+    order:
+      - deadline
+      - id
+      - file.name
+  - type: table
+    name: "Tudo"
+    order:
+      - id
+      - file.name
+      - status
+      - prioridade
+      - track
+      - criterio

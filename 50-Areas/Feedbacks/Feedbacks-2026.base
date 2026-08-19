@@ -1,0 +1,56 @@
+filters:
+  and:
+    - 'type == "feedback"'
+    - 'year == 2026'
+properties:
+  project:
+    displayName: Projeto
+  author:
+    displayName: Autor
+  role:
+    displayName: Papel
+  sentiment:
+    displayName: Sentimento
+  status:
+    displayName: Situação
+  criterio:
+    displayName: Critério
+  date:
+    displayName: Data
+views:
+  - type: table
+    name: "Todos os feedbacks 2026"
+    order:
+      - file.name
+      - project
+      - author
+      - sentiment
+      - status
+  - type: table
+    name: "O que está indo mal"
+    filters:
+      and:
+        - 'sentiment == "Mal"'
+    order:
+      - file.name
+      - criterio
+      - status
+      - date
+  - type: table
+    name: "O que está indo bem"
+    filters:
+      and:
+        - 'sentiment == "Bom"'
+    order:
+      - file.name
+      - criterio
+      - date
+  - type: table
+    name: "Pendentes de ação"
+    filters:
+      and:
+        - 'status == "Pendente"'
+    order:
+      - file.name
+      - sentiment
+      - criterio

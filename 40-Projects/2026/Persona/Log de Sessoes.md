@@ -126,3 +126,15 @@ Criado [[Empreenda Flix - indice de videos]] em `20-Literature/`, com os 29 víd
 **Preserve.** Nenhum anexo encontrado nas páginas dos vídeos — o "compilado de perguntas e respostas" citado na trilha Plantão de Dúvidas segue [PENDENTE] de localização.
 
 **Resume.** Próximo passo concreto: Markizin transcreve os vídeos na ordem sugerida e envia; cada transcrição vira nota `Flix NNN` em `20-Literature/`. Em paralelo, verificar se existe o Plano Empreendedor da edição anterior (Invest AI) — não está em nenhuma pasta auditada até agora.
+
+---
+
+### 2026-10-28 — Codex / Yan
+
+**Compress.** O repositório `persona-contexto` foi clonado em `C:\Users\yansi\OneDrive\persona-contexto` e definido como memória compartilhada padrão do Persona nesta máquina. O Codex recebeu um apontador global em `C:\Users\yansi\.codex\AGENTS.md`; o Claude recebeu memória global em `C:\Users\yansi\.claude\CLAUDE.md` e acesso persistente ao diretório em `settings.json`. A raiz `C:\Users\yansi\OneDrive\Persona_Geral` agora possui instruções locais em `AGENTS.md` e `CLAUDE.md`.
+
+O fluxo configurado exige sincronização antes da leitura, consulta seletiva deste cofre, verificação contra os artefatos operacionais atuais e alimentação posterior somente com fatos, decisões, feedbacks, riscos, pendências ou aprendizados materiais. O fechamento exige atualização deste log, revisão do diff, commit, rebase e push; conflitos não podem ser forçados.
+
+**Preserve.** Acesso de leitura e autenticação de push foram verificados com `git ls-remote` e `git push --dry-run`. A configuração JSON do Claude foi validada por parsing. Nenhuma credencial foi adicionada ao cofre.
+
+**Resume.** Próximo passo concreto: na próxima sessão nova do Claude ou Codex sobre Persona, confirmar que o agente sincroniza este repositório antes de trabalhar e registra aqui o resultado material da sessão.

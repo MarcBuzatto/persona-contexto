@@ -33,6 +33,9 @@ Frase de diferenciação: *O Persona não começa pela resposta. Começa pela ev
 
 ## Estado em 18/08/2026
 
+> [!warning] Atualização operacional — 28/10/2026
+> [FATO] A aplicação web v2 existe no repositório `yan1405/persona_mvp_V2`. Há um Preview Vercel `READY` do commit `9c5ce5c`; a Production consultada permanece `READY` no commit `06de045`. A entrada pública do Preview respondeu HTTP 200. Isso não valida autenticação, persistência, RLS nem o agente. A integração NVIDIA não obteve resposta em até 90 s; o host Supabase do ambiente respondeu NXDOMAIN e seu estado precisa ser confirmado no Dashboard. Consulte [[P-08 Publicar o MVP em producao]] e [[Log de Sessoes]].
+
 | Frente | Situação |
 |---|---|
 | Posicionamento | **[FATO]** Redefinido em 05/08/2026 (decisão X-001): sistema de evidências profissionais, com o [[Persona Live]] como diferencial |

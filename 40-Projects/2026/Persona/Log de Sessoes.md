@@ -138,3 +138,11 @@ O fluxo configurado exige sincronização antes da leitura, consulta seletiva de
 **Preserve.** Acesso de leitura e autenticação de push foram verificados com `git ls-remote` e `git push --dry-run`. A configuração JSON do Claude foi validada por parsing. Nenhuma credencial foi adicionada ao cofre.
 
 **Resume.** Próximo passo concreto: na próxima sessão nova do Claude ou Codex sobre Persona, confirmar que o agente sincroniza este repositório antes de trabalhar e registra aqui o resultado material da sessão.
+
+### 2026-10-28 — Codex / Yan — Preview do Persona
+
+**Compress.** Após `git pull --ff-only`, foram lidas as instruções do cofre e as notas operacionais pertinentes; o app foi conferido contra seus handoffs e revisão da Fase 7. O candidato `9c5ce5c` está em Preview Vercel `READY`, e a entrada pública respondeu HTTP 200 com login Microsoft. A Production continua `READY` no commit anterior `06de045`. Lint, typecheck, 32 testes e build passaram localmente nesta rodada anterior; as chamadas de inferência NVIDIA falharam por timeout de até 90 s. O host Supabase configurado retornou NXDOMAIN em três resolvedores públicos; o Dashboard exige login e o estado do projeto não foi confirmado. Nenhum login/callback real, dado, migração, RLS ou publicação de Production foi executado nesta rodada.
+
+**Preserve.** As alterações locais preexistentes no app foram mantidas. Os dois commits do trabalho (plano e evidências) foram enviados somente à branch de Preview; `origin/main` não foi alterada. Nenhum segredo foi registrado. O branch de Preview e o plano permanecem no repositório operacional.
+
+**Resume.** Próximo passo concreto: Yan verificar o estado de `pnztzmobiwlblzxcqjna` no Dashboard Supabase e confirmar se a recuperação é sem upgrade/custo; em paralelo, rotacionar a chave NVIDIA exposta e obter uma chamada de inferência bem-sucedida antes de configurar Preview. Depois, repetir o OAuth e o fluxo sintético autenticado, sem promover Production enquanto os gates falharem.

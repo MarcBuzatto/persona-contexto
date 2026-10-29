@@ -6,7 +6,7 @@ project: "[[Persona]]"
 year: 2026
 tags:
   - decisao
-updated: 2026-08-18
+updated: 2026-10-29
 ---
 
 # Registro de decisões
@@ -47,6 +47,8 @@ Decisões são inegociáveis até serem explicitamente revogadas. Nada aqui é a
 | D-026 | Pacote original do Design System localizado; tokens idênticos à reconstrução; 5 de 6 SVGs recuperados | 28/07/2026 | Vigente |
 | D-027 | Commit e push das três entregas pendentes, após revisão de código com 6 correções | 28/07/2026 | Vigente |
 | D-028 | Reorganização de pastas: repositório de código separado do material de competição | 29/07/2026 | Vigente |
+| D-029 | Aprovar visualmente a T4.2 — Diário após auditoria do artefato oficial e identificação dos dados sintéticos | 29/10/2026 | Vigente; aprovação visual, sem autorizar integração |
+| D-030 | Construir T4.3–T4.8 por seis prompts autônomos enviados em sequência e realizar auditoria consolidada após T4.8 | 29/10/2026 | Vigente; Etapas 5–6 e implementação continuam bloqueadas |
 
 ## Padrão que vale registrar
 

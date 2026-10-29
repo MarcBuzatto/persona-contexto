@@ -170,3 +170,11 @@ O fluxo configurado exige sincronização antes da leitura, consulta seletiva de
 **Preserve.** Nenhum arquivo do projeto operacional, tela, dado real, banco, merge, deploy ou Production foi alterado nesta auditoria. O título interno do artefato está correto, mas o nome externo do projeto ainda aparece como `T4.1 — Início do Persona`. A aprovação visual da T4.2 não foi presumida: ela continua [PENDENTE] de decisão explícita de Yan e deve ser registrada em [[Registro de Decisoes]] antes de liberar a próxima tela de [[Persona]].
 
 **Resume.** Próximo passo concreto: Yan renomear manualmente o projeto no Claude Design e decidir se aprova visualmente a T4.2. Até essa decisão, a T4.3 permanece bloqueada.
+
+### 2026-10-29 — Codex / Yan — Prompts sequenciais T4.3 a T4.8
+
+**Compress.** [FATO] Yan aprovou visualmente a T4.2 e escolheu acelerar a próxima fase: T4.3–T4.8 serão construídas no Claude Design por seis prompts autônomos enviados um por vez, sem auditoria externa intermediária. A auditoria independente será consolidada após T4.8. O pacote operacional foi criado em `claude/PROMPTS_T4_3_A_T4_8_2026-10-29.md`; `STATUS_PROJETO.md`, `LOG_DECISOES.md` e o apontador histórico de prompts foram reconciliados. As decisões correspondentes foram registradas em [[Registro de Decisoes]] como D-029 e D-030.
+
+**Preserve.** Cada prompt limita o Claude à própria tela, preserva as anteriores, exige dados literais ou marcação sintética e guarda artefato, estados, larguras, bundle/manifest, console e buscas para a auditoria consolidada. O processo não autoriza Etapas 5–6, React, dados reais, banco, GitHub, merge, deploy ou alteração do `persona_mvp_v2`. O nome externo do projeto Claude Design ainda precisa ser corrigido manualmente.
+
+**Resume.** Próximo passo concreto: Yan enviar o bloco “Prompt 1 — T4.3 Evidências”, aguardar a resposta final, guardar link e relatório e então seguir na ordem até T4.8. Depois, retornar com os seis resultados para auditoria consolidada de [[Persona]].

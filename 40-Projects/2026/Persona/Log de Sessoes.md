@@ -162,3 +162,11 @@ O fluxo configurado exige sincronização antes da leitura, consulta seletiva de
 **Preserve.** A Production permanece no commit `06de045`. O deployment Preview comprova apenas o build documental e a disponibilidade da tela pública; não valida callback OAuth, sessão, persistência, RLS ou o agente NVIDIA.
 
 **Resume.** Próximo passo concreto: após a rotação da chave, confirmar uma inferência e validar o fluxo autenticado sintético, sem promover Production antes dos gates pendentes.
+
+### 2026-10-29 — Codex / Yan — Auditoria visual da T4.2 Diário
+
+**Compress.** [FATO] O artefato oficial `T4.2 - Diário.html` do Claude Design foi reaberto e conferido contra o relato de correção. Os textos dos registros, o rascunho, a busca sem resultado, as datas não literais e a evidência demonstrativa aparecem identificados como dados sintéticos; as duas sugestões literais da massa fictícia da seção 10 foram preservadas. Os 21 estados de revisão e os três seletores de largura continuam disponíveis. Em 1024 x 768, o painel de exclusão bloqueada exibiu a data e a evidência como sintéticas. O console não apresentou erros; permaneceu somente o aviso conhecido do Babel no navegador. A checagem segue o contrato de [[Design System]] e não comprova integração no produto operacional.
+
+**Preserve.** Nenhum arquivo do projeto operacional, tela, dado real, banco, merge, deploy ou Production foi alterado nesta auditoria. O título interno do artefato está correto, mas o nome externo do projeto ainda aparece como `T4.1 — Início do Persona`. A aprovação visual da T4.2 não foi presumida: ela continua [PENDENTE] de decisão explícita de Yan e deve ser registrada em [[Registro de Decisoes]] antes de liberar a próxima tela de [[Persona]].
+
+**Resume.** Próximo passo concreto: Yan renomear manualmente o projeto no Claude Design e decidir se aprova visualmente a T4.2. Até essa decisão, a T4.3 permanece bloqueada.

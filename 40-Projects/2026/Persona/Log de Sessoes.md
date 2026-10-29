@@ -146,3 +146,19 @@ O fluxo configurado exige sincronização antes da leitura, consulta seletiva de
 **Preserve.** As alterações locais preexistentes no app foram mantidas. Os dois commits do trabalho (plano e evidências) foram enviados somente à branch de Preview; `origin/main` não foi alterada. Nenhum segredo foi registrado. O branch de Preview e o plano permanecem no repositório operacional.
 
 **Resume.** Próximo passo concreto: Yan verificar o estado de `pnztzmobiwlblzxcqjna` no Dashboard Supabase e confirmar se a recuperação é sem upgrade/custo; em paralelo, rotacionar a chave NVIDIA exposta e obter uma chamada de inferência bem-sucedida antes de configurar Preview. Depois, repetir o OAuth e o fluxo sintético autenticado, sem promover Production enquanto os gates falharem.
+
+### 2026-10-28 — Codex / Yan — Supabase restaurado
+
+**Compress.** Yan entrou no Dashboard Supabase, que confirmou `persona-mvp-v2` pausado. O botão `Resume project` foi usado sem escolher `Upgrade to Pro`; depois, o painel confirmou “Restoration complete”. O domínio voltou a resolver, o endpoint Auth de saúde retornou HTTP 200 e `/auth/iniciar` respondeu 307 para o OAuth Azure tanto no Preview quanto na Production. Isso não valida callback nem sessão.
+
+**Preserve.** Nenhuma migração, política RLS, conta ou dado foi criado, apagado ou alterado. Production permanece no commit `06de045`; o Preview permanece no commit `9c5ce5c`. O agente NVIDIA continua bloqueado por timeout de inferência, e a chave enviada anteriormente precisa ser rotacionada pelo titular.
+
+**Resume.** Próximo passo concreto: rotacionar a chave NVIDIA, validar uma inferência, e depois concluir OAuth e jornadas com conta sintética autorizada antes de considerar a promoção para Production.
+
+### 2026-10-29 — Codex / Yan — Preview documental atualizado
+
+**Compress.** O handoff operacional foi atualizado após a restauração do Supabase. O commit documental `96e5028` foi enviado somente à branch `codex/persona-preview-20261028`; a Vercel o marcou `READY`. A entrada pública do branch respondeu HTTP 200 e `/auth/iniciar` respondeu HTTP 307. Nenhuma alteração de código, variável ou Production foi incluída nesse commit.
+
+**Preserve.** A Production permanece no commit `06de045`. O deployment Preview comprova apenas o build documental e a disponibilidade da tela pública; não valida callback OAuth, sessão, persistência, RLS ou o agente NVIDIA.
+
+**Resume.** Próximo passo concreto: após a rotação da chave, confirmar uma inferência e validar o fluxo autenticado sintético, sem promover Production antes dos gates pendentes.

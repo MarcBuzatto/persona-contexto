@@ -34,7 +34,10 @@ Frase de diferenciação: *O Persona não começa pela resposta. Começa pela ev
 ## Estado em 18/08/2026
 
 > [!warning] Atualização operacional — 28/10/2026
-> [FATO] A aplicação web v2 existe no repositório `yan1405/persona_mvp_V2`. Há um Preview Vercel `READY` do commit `9c5ce5c`; a Production consultada permanece `READY` no commit `06de045`. A entrada pública do Preview respondeu HTTP 200. Isso não valida autenticação, persistência, RLS nem o agente. A integração NVIDIA não obteve resposta em até 90 s; o host Supabase do ambiente respondeu NXDOMAIN e seu estado precisa ser confirmado no Dashboard. Consulte [[P-08 Publicar o MVP em producao]] e [[Log de Sessoes]].
+> [FATO] A aplicação web v2 existe no repositório `yan1405/persona_mvp_V2`. Há um Preview Vercel `READY` do commit `9c5ce5c`; a Production consultada permanece `READY` no commit `06de045`. A entrada pública do Preview respondeu HTTP 200. Isso não valida autenticação, persistência, RLS nem o agente. A integração NVIDIA não obteve resposta em até 90 s. Consulte [[P-08 Publicar o MVP em producao]] e [[Log de Sessoes]].
+> [REVOGADO em 28/10/2026] O relato anterior de NXDOMAIN e de confirmação pendente do Supabase foi superado pela retomada registrada em [[Log de Sessoes]].
+> [FATO] Yan retomou o projeto Supabase pelo Dashboard e o painel confirmou “Restoration complete”. O DNS voltou a resolver, `/auth/v1/health` respondeu HTTP 200 e `/auth/iniciar` retornou o redirecionamento OAuth em Preview e Production. O callback e uma sessão autenticada continuam sem validação.
+> [FATO — 29/10/2026] O commit documental `96e5028` também ficou `READY` em Preview; a entrada pública respondeu HTTP 200 e `/auth/iniciar` respondeu HTTP 307. Production continua no commit `06de045`.
 
 | Frente | Situação |
 |---|---|

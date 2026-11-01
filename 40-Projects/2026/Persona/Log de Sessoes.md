@@ -178,3 +178,11 @@ O fluxo configurado exige sincronização antes da leitura, consulta seletiva de
 **Preserve.** Cada prompt limita o Claude à própria tela, preserva as anteriores, exige dados literais ou marcação sintética e guarda artefato, estados, larguras, bundle/manifest, console e buscas para a auditoria consolidada. O processo não autoriza Etapas 5–6, React, dados reais, banco, GitHub, merge, deploy ou alteração do `persona_mvp_v2`. O nome externo do projeto Claude Design ainda precisa ser corrigido manualmente.
 
 **Resume.** Próximo passo concreto: Yan enviar o bloco “Prompt 1 — T4.3 Evidências”, aguardar a resposta final, guardar link e relatório e então seguir na ordem até T4.8. Depois, retornar com os seis resultados para auditoria consolidada de [[Persona]].
+
+### 2026-11-01 — Codex / Yan — Oito telas relatadas como prontas
+
+**Compress.** [RELATADO POR YAN] As oito telas do redesign foram montadas no Claude Design, incluindo T4.3–T4.8. A conclusão ainda não foi promovida a [FATO] nem registrada como aprovação: faltam inspeção dos artefatos oficiais, estados, larguras, AgentPanel, bundle/manifest, console, dados sintéticos e buscas de resíduos previstas pela D-030.
+
+**Preserve.** `STATUS_PROJETO.md` e o checklist operacional permanecem com apenas T4.1 e T4.2 aprovadas até a auditoria consolidada. Etapas 5–6, React, banco, GitHub, merge e deploy continuam bloqueados. Relato de conclusão do Claude Design não comprova integração em [[MVP v2 - Refundacao]].
+
+**Resume.** Próximo passo concreto: reunir o link do projeto e as respostas finais de T4.3–T4.8, executar a auditoria consolidada e emitir uma matriz aprovada/corrigir por tela antes de atualizar decisões e liberar a Etapa 5 de [[Persona]].

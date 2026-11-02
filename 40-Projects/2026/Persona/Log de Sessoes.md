@@ -186,3 +186,11 @@ O fluxo configurado exige sincronização antes da leitura, consulta seletiva de
 **Preserve.** `STATUS_PROJETO.md` e o checklist operacional permanecem com apenas T4.1 e T4.2 aprovadas até a auditoria consolidada. Etapas 5–6, React, banco, GitHub, merge e deploy continuam bloqueados. Relato de conclusão do Claude Design não comprova integração em [[MVP v2 - Refundacao]].
 
 **Resume.** Próximo passo concreto: reunir o link do projeto e as respostas finais de T4.3–T4.8, executar a auditoria consolidada e emitir uma matriz aprovada/corrigir por tela antes de atualizar decisões e liberar a Etapa 5 de [[Persona]].
+
+### 2026-11-02 — Codex / Yan — Prompt único de auditoria no Claude Cowork
+
+**Compress.** [DECISÃO] Yan optou por usar o acesso direto do Claude Cowork ao projeto para reduzir alternância e tokens na auditoria das oito telas. Foi criado `claude/PROMPT_AUDITORIA_CONSOLIDADA_T4_1_A_T4_8_2026-11-02.md`, com quatro fases: baseline somente leitura, auditoria funcional/visual/responsiva/acessível/técnica, correção controlada e regressão final. A decisão foi registrada como D-031 em [[Registro de Decisoes]].
+
+**Preserve.** O prompt exige artefatos oficiais, estados, cinco larguras, dados sintéticos, navegação, WCAG 2.2 AA, bundle/manifest, console e buscas de resíduos. As evidências ficam no projeto e a resposta é compacta. O Claude não pode aprovar em nome de Yan, executar Etapa 6, exportar, sincronizar GitHub ou alterar o `persona_mvp_v2`.
+
+**Resume.** Próximo passo concreto: Yan enviar o prompt único ao Claude Cowork e retornar com a matriz final, o caminho do relatório e as pendências manuais para decisão sobre aprovação visual da Etapa 4 de [[Persona]].

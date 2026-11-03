@@ -220,3 +220,11 @@ O fluxo configurado exige sincronização antes da leitura, consulta seletiva de
 **Preserve.** [PENDENTE] As oito telas estão tecnicamente prontas para a aprovação visual individual de Yan, mas nenhuma foi aprovada ainda. NVDA e VoiceOver reais, zoom real a 125% e 200%, reautenticação Microsoft, exclusão/exportação reais e qualquer comportamento de backend permanecem sem prova. Esses limites não transformam o protótipo em implementação de [[MVP v2 - Refundacao]] e não autorizam merge ou Production.
 
 **Resume.** Próximo passo concreto: Yan abrir as oito telas oficiais, realizar a aprovação visual e decidir como tratar os testes manuais; depois registrar o fechamento da Etapa 4 e iniciar a matriz de reutilização do backend em [[Persona]].
+
+### 2026-11-03 — Codex / Yan — Avaliação da skill screenshot-to-html
+
+**Compress.** [FATO] O repositório oficial `sevzq/screenshot-to-html`, no commit `7b5469b`, foi avaliado contra a migração Claude Design → `persona_mvp_v2`. A skill gera uma réplica em HTML único, vanilla ou Tailwind via CDN; não produz React/Next.js nem preserva autenticação, Supabase/RLS, contratos de dados, componentes ou gates do produto. O `shot.mjs --verify` aplica apenas heurísticas de controles, cursor e regras de hover/foco e encerra com código `0` mesmo quando imprime `WARN`. A análise citada ficou em `persona_mvp_v2/docs/research/screenshot-to-html-evaluation.md`.
+
+**Preserve.** [RECOMENDAÇÃO] Não instalar como dependência, não usar como migrador e não incorporar o HTML gerado ao produto. No máximo, reaproveitar opcionalmente o método de inventário visual e comparação em um piloto efêmero, com dados sintéticos e fora do runtime; os gates aprovados de implementação, acessibilidade, integração, Preview, merge e deploy permanecem inalterados. Nenhum código do produto foi modificado.
+
+**Resume.** Próximo passo concreto: concluir a aprovação visual individual das oito telas e, somente após o gate explícito, executar a fatia piloto `Início + shell + leitura real` diretamente nos componentes e contratos existentes de [[Persona]].

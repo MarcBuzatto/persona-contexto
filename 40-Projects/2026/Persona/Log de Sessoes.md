@@ -221,6 +221,14 @@ O fluxo configurado exige sincronização antes da leitura, consulta seletiva de
 
 **Resume.** Próximo passo concreto: Yan abrir as oito telas oficiais, realizar a aprovação visual e decidir como tratar os testes manuais; depois registrar o fechamento da Etapa 4 e iniciar a matriz de reutilização do backend em [[Persona]].
 
+### 2026-11-03 — Yan / Codex — Aprovação visual das oito telas
+
+**Compress.** [DECISÃO] Yan confirmou explicitamente a aprovação visual de T4.1–T4.8 e autorizou o fechamento da Etapa 4. A decisão foi registrada como D-032 em [[Registro de Decisoes]] e reconciliada nos arquivos operacionais `claude/STATUS_PROJETO.md` e `claude/LOG_DECISOES.md`.
+
+**Preserve.** A aprovação cobre somente o design oficial corrigido e auditado. NVDA/VoiceOver reais, zoom real, reautenticação Microsoft, exclusão/exportação reais e backend permanecem pendentes. Não houve autorização para implementar, criar worktree, conectar dados, alterar banco, fazer merge ou publicar Production em [[MVP v2 - Refundacao]].
+
+**Resume.** Próximo passo concreto: apresentar a Yan o escopo da auditoria de reutilização do backend e, após autorização separada, produzir a matriz tela × dados × ações × backend de [[Persona]].
+
 ### 2026-11-03 — Codex / Yan — Avaliação da skill screenshot-to-html
 
 **Compress.** [FATO] O repositório oficial `sevzq/screenshot-to-html`, no commit `7b5469b`, foi avaliado contra a migração Claude Design → `persona_mvp_v2`. A skill gera uma réplica em HTML único, vanilla ou Tailwind via CDN; não produz React/Next.js nem preserva autenticação, Supabase/RLS, contratos de dados, componentes ou gates do produto. O `shot.mjs --verify` aplica apenas heurísticas de controles, cursor e regras de hover/foco e encerra com código `0` mesmo quando imprime `WARN`. A análise citada ficou em `persona_mvp_v2/docs/research/screenshot-to-html-evaluation.md`.

@@ -236,3 +236,11 @@ O fluxo configurado exige sincronização antes da leitura, consulta seletiva de
 **Preserve.** [RECOMENDAÇÃO] Não instalar como dependência, não usar como migrador e não incorporar o HTML gerado ao produto. No máximo, reaproveitar opcionalmente o método de inventário visual e comparação em um piloto efêmero, com dados sintéticos e fora do runtime; os gates aprovados de implementação, acessibilidade, integração, Preview, merge e deploy permanecem inalterados. Nenhum código do produto foi modificado.
 
 **Resume.** Próximo passo concreto: concluir a aprovação visual individual das oito telas e, somente após o gate explícito, executar a fatia piloto `Início + shell + leitura real` diretamente nos componentes e contratos existentes de [[Persona]].
+
+### 2026-11-03 — Codex / Yan — Arquitetura multiagente para o Claude Code
+
+**Compress.** [DECISÃO] Yan aprovou manter `persona_mvp_v2` como repositório operacional e materializar uma equipe de cinco papéis: Orquestrador Central, Migração de Interface, Dados e Backend, Agente NVIDIA e Verificação Independente. A pasta `AGENTES/` recebeu governança, contratos ponderados, documento-base, status, registro de conversas e prompts manuais. O validador da skill `build-agent-team` concluiu com zero erros e zero avisos. A decisão foi registrada como D-033 em [[Registro de Decisoes]].
+
+**Preserve.** [FATO] Nenhuma aba do Claude Code, skill adicional, worktree, mudança de código, banco, merge, push do produto ou deploy foi executado. O checkout operacional continua quatro commits à frente do remoto e com mudanças anteriores não reconciliadas; por isso, a arquitetura está concluída, mas a execução do produto permanece em 0% nesta etapa. O Agente NVIDIA foi delimitado como read-only, efêmero, baseado em evidências e sem tool loop autônomo inicial; a migração de Diário, Score e Artefatos de Groq para NVIDIA continua [PENDENTE] de decisão específica.
+
+**Resume.** Próximo passo concreto: abrir primeiro a aba do Orquestrador com `AGENTES/PROMPTS/00_orquestrador.md`, auditar o baseline Git em leitura e apresentar a classificação das mudanças antes de criar worktrees ou liberar especialistas de [[MVP v2 - Refundacao]].

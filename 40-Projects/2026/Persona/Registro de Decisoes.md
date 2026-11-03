@@ -51,6 +51,7 @@ Decisões são inegociáveis até serem explicitamente revogadas. Nada aqui é a
 | D-030 | Construir T4.3–T4.8 por seis prompts autônomos enviados em sequência e realizar auditoria consolidada após T4.8 | 29/10/2026 | Vigente; Etapas 5–6 e implementação continuam bloqueadas |
 | D-031 | Executar no Claude Cowork uma auditoria consolidada das oito telas, com baseline, correção controlada, regressão e evidência salva no projeto | 02/11/2026 | Vigente; aprovação final permanece com Yan e Etapa 6 continua bloqueada |
 | D-032 | Aprovar visualmente T4.1–T4.8 e encerrar a Etapa 4 após correção e regressão nos projetos oficiais | 03/11/2026 | Vigente; não autoriza implementação, merge ou Production |
+| D-033 | Manter `persona_mvp_v2` como repositório operacional e organizar a próxima execução no Claude Code com Orquestrador Central, Interface, Backend, Agente NVIDIA e Verificação Independente; escritores usam worktrees separados e somente o orquestrador integra Git | 03/11/2026 | Vigente; arquitetura aprovada, mas código, worktrees, merge, push e deploy dependem dos gates registrados |
 
 ## Padrão que vale registrar
 

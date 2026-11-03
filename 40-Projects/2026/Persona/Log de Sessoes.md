@@ -194,3 +194,11 @@ O fluxo configurado exige sincronização antes da leitura, consulta seletiva de
 **Preserve.** O prompt exige artefatos oficiais, estados, cinco larguras, dados sintéticos, navegação, WCAG 2.2 AA, bundle/manifest, console e buscas de resíduos. As evidências ficam no projeto e a resposta é compacta. O Claude não pode aprovar em nome de Yan, executar Etapa 6, exportar, sincronizar GitHub ou alterar o `persona_mvp_v2`.
 
 **Resume.** Próximo passo concreto: Yan enviar o prompt único ao Claude Cowork e retornar com a matriz final, o caminho do relatório e as pendências manuais para decisão sobre aprovação visual da Etapa 4 de [[Persona]].
+
+### 2026-11-02 — Codex / Yan — Revisão da entrega da auditoria T4.1–T4.8
+
+**Compress.** [FATO] A pasta local `auditoria_T4_2026-11-02` contém relatório consolidado, plano numerado de correções, resultados automatizados das oito telas, evidência de teclado, sobreposição e capturas. A matriz cobre 1.380 renderizações nas larguras 1440, 1280, 1024, 768 e 375 px e não registrou erro de renderização ou console. A auditoria encontrou defeitos Maiores nas larguras oficiais em T4.4, T4.5 e T4.6; T4.1, T4.2, T4.3 e T4.8 falham nas verificações de segurança de 768/375 px; T4.7 não tem defeito Maior, mas mantém verificações manuais pendentes. Nenhuma tela está aprovada.
+
+**Preserve.** [PENDENTE] Antes da correção, Yan precisa decidir os números do Narrative Score, se 375 px é gate formal da T4, se manifest por tela é obrigatório e se o aviso de conversa efêmera deve aparecer também nos estados recolhido/indisponível. A entrega não inclui o snapshot JSON citado pelo relatório e não traz capturas T4.6 em 1280 px, embora o resultado automatizado dessa largura esteja no JSON. NVDA/VoiceOver reais, zoom real, Microsoft, exclusão e backend seguem sem prova. Etapas 5–6 e implementação continuam bloqueadas conforme [[Registro de Decisoes]].
+
+**Resume.** Próximo passo concreto: devolver ao Claude Design um único prompt de correção com P-01 a P-18, as quatro decisões de Yan e as duas lacunas de evidência; depois repetir regressão completa e só então aprovar tela por tela em [[Persona]].

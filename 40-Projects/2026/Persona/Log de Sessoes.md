@@ -204,3 +204,11 @@ O fluxo configurado exige sincronização antes da leitura, consulta seletiva de
 **Resume.** Próximo passo concreto: devolver ao Claude Design um único prompt de correção com P-01 a P-18, as quatro decisões de Yan e as duas lacunas de evidência; depois repetir regressão completa e só então aprovar tela por tela em [[Persona]].
 
 **Atualização da sessão.** [FATO] Foi criado e validado `auditoria_T4_2026-11-02/ANALISE_CODEX_PARA_CLAUDE_2026-11-02.json`, contendo o veredito independente, achados maiores e menores, lacunas de evidência, recomendações para as quatro decisões de Yan e o formato de resposta solicitado ao Claude. O arquivo pede somente revisão, sem autorizar correções, aprovação ou avanço de etapa em [[Persona]].
+
+### 2026-11-03 — Codex / Yan — Revisão do pacote de correções T4.1–T4.8
+
+**Compress.** [FATO] O pacote local `auditoria_T4_correcoes_2026-11-03/pacote_correcoes` contém dez arquivos corrigidos, resultados automatizados de 1.520 renderizações, evidência de teclado e sobreposição, inventário de componentes, hashes e capturas T4.6 em 1280 px. Os dez hashes locais conferem com a tabela do relatório e a bateria da cópia corrigida registra zero violações axe, sobreposição, corte, overflow interno, erro de console e scroll horizontal de documento. O snapshot antes ausente foi localizado separadamente em `Downloads/persona_865d08f1_snapshot_2026-11-02.json`.
+
+**Preserve.** [BLOQUEADOR] As correções não foram gravadas no projeto oficial do Claude Design; portanto, nenhuma classificação da cópia corrigida vale ainda para o artefato oficial. T4.6 mantém o número sem fonte “21 dias”; T4.7 perde a navegação em 375 px, contrariando o gate de ação acessível; T4.8 não teve P-17 verificado e P-18 não foi corrigido; P-05 não foi executado. O pacote altera `_ds_bundle.js`, mas não inclui as fontes correspondentes dos componentes nem altera `_ds_manifest.json`, criando risco de recompilação apagar as correções. O relatório também declara um incidente recuperado de escrita no `github.md` oficial. Etapas 5–6 e implementação permanecem bloqueadas conforme [[Registro de Decisoes]].
+
+**Resume.** Próximo passo concreto: corrigir os bloqueios restantes e a fonte do design system, gravar os arquivos no projeto oficial, baixar novamente, comparar hashes e repetir a regressão oficial antes da aprovação visual individual de [[Persona]].

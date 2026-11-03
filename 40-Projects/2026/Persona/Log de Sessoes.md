@@ -244,3 +244,11 @@ O fluxo configurado exige sincronização antes da leitura, consulta seletiva de
 **Preserve.** [FATO] Nenhuma aba do Claude Code, skill adicional, worktree, mudança de código, banco, merge, push do produto ou deploy foi executado. O checkout operacional continua quatro commits à frente do remoto e com mudanças anteriores não reconciliadas; por isso, a arquitetura está concluída, mas a execução do produto permanece em 0% nesta etapa. O Agente NVIDIA foi delimitado como read-only, efêmero, baseado em evidências e sem tool loop autônomo inicial; a migração de Diário, Score e Artefatos de Groq para NVIDIA continua [PENDENTE] de decisão específica.
 
 **Resume.** Próximo passo concreto: abrir primeiro a aba do Orquestrador com `AGENTES/PROMPTS/00_orquestrador.md`, auditar o baseline Git em leitura e apresentar a classificação das mudanças antes de criar worktrees ou liberar especialistas de [[MVP v2 - Refundacao]].
+
+### 2026-11-03 — Yan / Codex — Ponytail como skill principal
+
+**Compress.** [DECISÃO] Após o primeiro retorno do Orquestrador, Yan definiu `/ponytail full` como skill principal e obrigatória de todas as sessões da equipe. A governança e os cinco prompts foram corrigidos para ativá-la antes das skills especializadas, que passam a ser carregadas somente quando o lote exigir. A decisão foi registrada como D-034 em [[Registro de Decisoes]].
+
+**Preserve.** A economia de contexto e a busca pela menor solução completa não autorizam cortar segurança, privacidade, validação, tratamento de erros, testes ou acessibilidade. O Orquestrador concluiu a auditoria read-only do baseline e continua aguardando decisão de Yan antes de commit, push, tag, worktrees ou código de [[MVP v2 - Refundacao]].
+
+**Resume.** Próximo passo concreto: Yan decidir o gate do baseline proposto pelo Orquestrador; depois, atualizar os prompts já abertos ou reabrir as sessões com a instrução `/ponytail full` no início.

@@ -269,6 +269,14 @@ O fluxo configurado exige sincronização antes da leitura, consulta seletiva de
 
 **Resume.** Próximo passo concreto: o Orquestrador calcular os hashes brutos, extrair sem conversão, reproduzir a normalização de T4.3/T4.6 somente em cópias e parar se surgir qualquer divergência antes de criar `docs/design/approved/2026-11-03-t4/` em [[MVP v2 - Refundacao]].
 
+### 2026-11-04 — Claude Code / Codex / Yan — Revisão do mapa de migração da Interface
+
+**Compress.** [FATO] O commit local `8c5ef15` do branch `wt/interface-lote1` alterou somente `docs/redesign/interface/MAPA_TELAS.md` e `AGENTES/01_interface/STATUS.md`, sem push e sem código de produto. Os 285 arquivos incluídos no pacote visual congelado conferem com o manifesto; os hashes citados pelo mapa apontam para os artefatos esperados e `git diff --check` está limpo.
+
+**Preserve.** [PENDENTE] Antes do aceite documental, o mapa precisa enumerar fielmente os estados: T4.3 declara 28, mas o objeto `ESC` contém 27 e inclui `det-e2`/`det-e3`; T4.5 usa enumeração abreviada; T4.8 resume 19 cenários explícitos em poucos grupos genéricos. A frase “sem backend nem contrato de produto” também deve distinguir a ausência de backend/integração da visão do Agente já aprovada pela LD-026. Os `.woff2` estão fora do pacote Git, mas permanecem nas cópias oficiais locais registradas em `MANIFEST.json`; não é necessário buscá-los novamente na internet.
+
+**Resume.** Próximo passo concreto: o agente de Interface criar novo commit local corrigindo o inventário de estados, a redação do contrato do Agente, a proveniência das fontes e os gates por fatia; depois o Orquestrador substituir o SHA congelado e reenviar à Verificação Independente de [[MVP v2 - Refundacao]].
+
 ### 2026-11-04 — Yan / Codex — Capturas do redesign organizadas
 
 **Compress.** [FATO] Foi criada `Persona_Geral/Prinst_persona`, preservando os arquivos de origem, com 126 capturas da nova versão: nove imagens representativas do pacote final v2, 107 imagens da auditoria consolidada separadas entre T4.1–T4.8 e dez capturas finais da T4.6 em 1280 px. Um `LEIA-ME.md` diferencia imagens finais de evidências anteriores às correções.

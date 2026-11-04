@@ -285,6 +285,8 @@ O fluxo configurado exige sincronização antes da leitura, consulta seletiva de
 
 **Resume.** Próximo passo concreto: usar `01_finais_representativas` e `03_t46_final_1280` quando for necessário apresentar a versão aprovada; consultar `02_auditoria_completa_por_tela` apenas como histórico técnico de estados e larguras.
 
+**Atualização da sessão.** [FATO] Para apoiar uma apresentação objetiva de até dez slides, foi criada `Prinst_persona/04_apresentacao_16x9` com oito imagens, uma para cada área T4.1–T4.8, padronizadas em 1920 × 1080 px. A composição preserva a proporção da interface, usa preenchimento lateral quando necessário e corta somente o excesso vertical da captura longa da tela Início; os 126 arquivos de origem permanecem intactos.
+
 ### 2026-11-04 — Claude Code / Codex / Yan — Revisão do lote de Dados e Backend
 
 **Compress.** [FATO] O commit local `ffd4289` do branch `wt/backend-lote1` alterou somente a matriz T4.1–T4.8, o relatório e o script de teste RLS da Fase 9 e o `STATUS.md`, sem push, migration ou acesso ao Supabase. A correção elimina o falso positivo dos blocos negativos e passa a conferir SQLSTATE, isolamento entre A/B, ausência de identidade, privilégios e a cascata com dados dependentes.

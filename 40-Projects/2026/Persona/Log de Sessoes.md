@@ -6,7 +6,7 @@ project: "[[Persona]]"
 year: 2026
 tags:
   - registro
-updated: 2026-08-18
+updated: 2026-11-04
 ---
 
 # Log de sessões
@@ -302,3 +302,10 @@ O fluxo configurado exige sincronização antes da leitura, consulta seletiva de
 **Preserve.** [PENDENTE] O incremento não deve ser integrado ainda. Foi reproduzido que uma instrução maliciosa literal armazenada no campo da evidência pode ser aceita como `source_excerpt` e reaparecer no rascunho final. Também foi aceita uma resposta incompatível com o JSON Schema documentado, contendo seis argumentos, `draft` de 1.300 caracteres e propriedade extra; `parseLiveResponse` aplica apenas parte das restrições do schema. O script `npm test` ainda não inclui `lib/agent/agent.test.ts`, como já registrado pelo agente.
 
 **Resume.** Próximo passo concreto: o Agente NVIDIA corrigir a validação efetiva do schema e impedir que instruções/meta-comandos presentes nas evidências virem argumento ou rascunho; ampliar os testes adversariais, criar novo commit local e reenviar o SHA congelado à Verificação Independente de [[MVP v2 - Refundacao]].
+
+### 2026-11-04 — ChatGPT / Marc — Documentos escolares no modelo do professor
+
+[FATO] Trabalho escrito refeito em oito seções do modelo HERE4LIFE, com bibliografia externa verificada. Cronograma refeito em matriz de integrantes e semanas, dividido por mês, de abril até 04/11. Modelos originais e DOCX editáveis reunidos em [[Documentos PAL]].
+[HIPÓTESE] Distribuição semanal simulada conforme autorização de Marc, separada dos marcos documentados. Preços históricos e cálculo financeiro permanecem hipóteses, sem alegar receita ou validação.
+[FATO] Duas revisões por documento: conteúdo/fontes e inspeção visual das 10 páginas do trabalho e 8 do cronograma. Fontes resumidas em [[Fontes externas do trabalho PAL 2026]].
+[PENDENTE] Confirmar divergência do nome de Bruno, eventual inclusão de Pablo e prazo escolar. Próximo passo: equipe revisar esses dados e substituir tarefas simuladas por registros reais quando disponíveis.

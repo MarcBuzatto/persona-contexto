@@ -64,3 +64,7 @@ Repositório privado. Guarda estratégia de competição em andamento — feedba
 ---
 
 Senac Lapa Tito · Técnico em Inteligência Artificial · Empreenda Senac 19ª edição
+
+## Documentos escolares do Persona
+
+Modelos recebidos, trabalho escrito e cronograma editáveis estão em [Documentos PAL](40-Projects/2026/Persona/Arquivos/PAL/Documentos%20PAL.md). Consulte as orientações para contribuir e as pendências de confirmação antes da entrega.

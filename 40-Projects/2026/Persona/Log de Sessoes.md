@@ -292,3 +292,11 @@ O fluxo configurado exige sincronização antes da leitura, consulta seletiva de
 **Preserve.** [PENDENTE] Antes de liberar o teste no projeto de QA, as verificações tabulares dos passos 1, 5, 6 e 9 devem falhar automaticamente quando retornarem valores inesperados; hoje elas apenas exibem resultados, mantendo risco de aceite manual incorreto. O comentário inicial também diverge do rodapé sobre quais passos devolver. A exportação sem paginação é risco confirmado no código; o limite exato do projeto continua pendente de consulta. A hipótese de falha da exclusão por FKs `RESTRICT` só será decidida após execução autorizada e leitura do SQLSTATE real.
 
 **Resume.** Próximo passo concreto: o agente de Backend criar commit corretivo local com assertions automáticas e documentação consistente; depois o Orquestrador substituir o SHA congelado e reenviar à Verificação antes de pedir autorização para migration/teste no Supabase de QA de [[MVP v2 - Refundacao]].
+
+### 2026-11-04 — Claude Code / Codex / Yan — Revisão do incremento 1 do Agente NVIDIA
+
+**Compress.** [FATO] O commit local `6a6b8f0` do branch `wt/agente-nvidia-lote1` adiciona recuperação read-only, prompt `persona-agent-readonly-v1`, contrato, validação reutilizada do Persona Live e nove testes sintéticos, sem push, rota, chamada NVIDIA, credencial, `.env`, banco ou mutação. Codex confirmou 9/9 testes novos, 32/32 existentes, lint, typecheck e diff limpo.
+
+**Preserve.** [PENDENTE] O incremento não deve ser integrado ainda. Foi reproduzido que uma instrução maliciosa literal armazenada no campo da evidência pode ser aceita como `source_excerpt` e reaparecer no rascunho final. Também foi aceita uma resposta incompatível com o JSON Schema documentado, contendo seis argumentos, `draft` de 1.300 caracteres e propriedade extra; `parseLiveResponse` aplica apenas parte das restrições do schema. O script `npm test` ainda não inclui `lib/agent/agent.test.ts`, como já registrado pelo agente.
+
+**Resume.** Próximo passo concreto: o Agente NVIDIA corrigir a validação efetiva do schema e impedir que instruções/meta-comandos presentes nas evidências virem argumento ou rascunho; ampliar os testes adversariais, criar novo commit local e reenviar o SHA congelado à Verificação Independente de [[MVP v2 - Refundacao]].

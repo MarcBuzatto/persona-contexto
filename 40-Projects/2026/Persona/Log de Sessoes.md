@@ -252,3 +252,11 @@ O fluxo configurado exige sincronização antes da leitura, consulta seletiva de
 **Preserve.** A economia de contexto e a busca pela menor solução completa não autorizam cortar segurança, privacidade, validação, tratamento de erros, testes ou acessibilidade. O Orquestrador concluiu a auditoria read-only do baseline e continua aguardando decisão de Yan antes de commit, push, tag, worktrees ou código de [[MVP v2 - Refundacao]].
 
 **Resume.** Próximo passo concreto: Yan decidir o gate do baseline proposto pelo Orquestrador; depois, atualizar os prompts já abertos ou reabrir as sessões com a instrução `/ponytail full` no início.
+
+### 2026-11-03 — Claude Code / Codex / Yan — Baseline local e permissões reconciliados
+
+**Compress.** [FATO] O Lote 0 organizou o estado local em quatro commits de documentação e governança, seguidos por dois commits de correção e registro; `main` ficou dez commits à frente de `origin/main`, sem push. Ponytail v5.3.3 foi instalado localmente no Claude Code, os comandos legados foram movidos para quarentena e nove regras `deny` para `claude-flow`, `agentic-flow` e `ruflo` foram confirmadas pela tela `/permissions`. O arquivo ignorado `.claude/settings.local.json`, herdado da v1 com 87 autorizações amplas, foi reduzido a `{}`; a lista local `Allow` ficou vazia e o alerta de wildcard desapareceu.
+
+**Preserve.** [FATO] Codex repetiu as validações com falha imediata por código de saída: lint, typecheck, 32/32 testes e build Next.js passaram; `git diff --check origin/main..HEAD` ficou limpo e o working tree permaneceu sem mudanças rastreadas. A Vercel foi consultada em leitura: Production continua no commit `06de045` da branch `main`, enquanto a branch `codex/persona-preview-20261028` gerou Preview até `96e5028`. Nenhum push, deploy, pacote legado, worktree ou mudança de produto foi executado em [[MVP v2 - Refundacao]].
+
+**Resume.** Próximo passo concreto: executar `/design-sync` e exportar novamente os projetos oficiais T4 e Design System para `Persona_Geral/claude/exports/2026-11-03-oficial/`; comparar com o pacote v2 e reproduzir a normalização de T4.3/T4.6 antes de congelar a referência visual ou enviar a branch `baseline/2026-11-03`.

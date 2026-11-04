@@ -268,3 +268,11 @@ O fluxo configurado exige sincronização antes da leitura, consulta seletiva de
 **Preserve.** [FATO] Não foram encontrados arquivos de configuração executável ocultos, repositórios Git internos ou pontos de nova análise nos downloads. Os hashes de `_ds_bundle.js` e `_ds_manifest.json` conferem com o Design System incorporado à T4 e com o pacote v2. Os HTML brutos de T4.3 e T4.6 diferem das cópias normalizadas do pacote v2, como esperado; nenhuma normalização, extração, manifesto, pacote congelado, alteração de código, push do produto ou deploy foi executado.
 
 **Resume.** Próximo passo concreto: o Orquestrador calcular os hashes brutos, extrair sem conversão, reproduzir a normalização de T4.3/T4.6 somente em cópias e parar se surgir qualquer divergência antes de criar `docs/design/approved/2026-11-03-t4/` em [[MVP v2 - Refundacao]].
+
+### 2026-11-04 — Yan / Codex — Capturas do redesign organizadas
+
+**Compress.** [FATO] Foi criada `Persona_Geral/Prinst_persona`, preservando os arquivos de origem, com 126 capturas da nova versão: nove imagens representativas do pacote final v2, 107 imagens da auditoria consolidada separadas entre T4.1–T4.8 e dez capturas finais da T4.6 em 1280 px. Um `LEIA-ME.md` diferencia imagens finais de evidências anteriores às correções.
+
+**Preserve.** [FATO] A contagem de cópias conferiu com as fontes e os hashes das 19 imagens finais comparadas apresentaram zero divergências. Nenhum HTML, componente, código do produto, banco, branch, deploy ou arquivo de origem foi alterado em [[Persona]].
+
+**Resume.** Próximo passo concreto: usar `01_finais_representativas` e `03_t46_final_1280` quando for necessário apresentar a versão aprovada; consultar `02_auditoria_completa_por_tela` apenas como histórico técnico de estados e larguras.

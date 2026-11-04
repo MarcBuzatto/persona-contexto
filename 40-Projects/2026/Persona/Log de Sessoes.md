@@ -284,3 +284,11 @@ O fluxo configurado exige sincronização antes da leitura, consulta seletiva de
 **Preserve.** [FATO] A contagem de cópias conferiu com as fontes e os hashes das 19 imagens finais comparadas apresentaram zero divergências. Nenhum HTML, componente, código do produto, banco, branch, deploy ou arquivo de origem foi alterado em [[Persona]].
 
 **Resume.** Próximo passo concreto: usar `01_finais_representativas` e `03_t46_final_1280` quando for necessário apresentar a versão aprovada; consultar `02_auditoria_completa_por_tela` apenas como histórico técnico de estados e larguras.
+
+### 2026-11-04 — Claude Code / Codex / Yan — Revisão do lote de Dados e Backend
+
+**Compress.** [FATO] O commit local `ffd4289` do branch `wt/backend-lote1` alterou somente a matriz T4.1–T4.8, o relatório e o script de teste RLS da Fase 9 e o `STATUS.md`, sem push, migration ou acesso ao Supabase. A correção elimina o falso positivo dos blocos negativos e passa a conferir SQLSTATE, isolamento entre A/B, ausência de identidade, privilégios e a cascata com dados dependentes.
+
+**Preserve.** [PENDENTE] Antes de liberar o teste no projeto de QA, as verificações tabulares dos passos 1, 5, 6 e 9 devem falhar automaticamente quando retornarem valores inesperados; hoje elas apenas exibem resultados, mantendo risco de aceite manual incorreto. O comentário inicial também diverge do rodapé sobre quais passos devolver. A exportação sem paginação é risco confirmado no código; o limite exato do projeto continua pendente de consulta. A hipótese de falha da exclusão por FKs `RESTRICT` só será decidida após execução autorizada e leitura do SQLSTATE real.
+
+**Resume.** Próximo passo concreto: o agente de Backend criar commit corretivo local com assertions automáticas e documentação consistente; depois o Orquestrador substituir o SHA congelado e reenviar à Verificação antes de pedir autorização para migration/teste no Supabase de QA de [[MVP v2 - Refundacao]].

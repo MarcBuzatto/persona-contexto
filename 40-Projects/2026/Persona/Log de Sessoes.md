@@ -297,6 +297,14 @@ O fluxo configurado exige sincronização antes da leitura, consulta seletiva de
 
 **Resume.** Próximo passo concreto: o agente de Backend criar commit corretivo local com assertions automáticas e documentação consistente; depois o Orquestrador substituir o SHA congelado e reenviar à Verificação antes de pedir autorização para migration/teste no Supabase de QA de [[MVP v2 - Refundacao]].
 
+### 2026-11-05 — Claude Code / Codex / Yan — Correção do gate SQL de Dados e Backend
+
+**Compress.** [FATO] O commit local `1e7ad02` do branch `wt/backend-lote1` adicionou `pg_temp.confere` ao teste RLS: os passos 1, 5, 6 e 9 agora comparam o `jsonb` obtido com o esperado e reprovam automaticamente em divergência ou `NULL`. O diagnóstico não abortivo do passo 8 foi preservado; uma falha de exclusão deixa as linhas existentes e é convertida em reprovação pelo passo 9. Comentários e rodapé foram alinhados, e R2 passou a separar a ausência factual de paginação do limite remoto ainda pendente.
+
+**Preserve.** [PENDENTE] O SQL continua sem prova de parser ou execução. O commit está apto a congelamento e Verificação Independente, mas migration e teste no Supabase permanecem gates explícitos de Yan. Na execução, devem ser usadas duas contas descartáveis de QA, nunca a conta principal; a checagem de privilégios cobre `SELECT/INSERT/UPDATE/DELETE`, não as demais capacidades de tabela como `TRUNCATE/REFERENCES/TRIGGER`.
+
+**Resume.** Próximo passo concreto: o Orquestrador congelar `1e7ad02`, enviar o patch à Verificação e só depois apresentar a Yan o pedido separado para aplicar a migration e executar o teste com duas contas descartáveis no projeto de QA de [[MVP v2 - Refundacao]].
+
 ### 2026-11-04 — Claude Code / Codex / Yan — Revisão do incremento 1 do Agente NVIDIA
 
 **Compress.** [FATO] O commit local `6a6b8f0` do branch `wt/agente-nvidia-lote1` adiciona recuperação read-only, prompt `persona-agent-readonly-v1`, contrato, validação reutilizada do Persona Live e nove testes sintéticos, sem push, rota, chamada NVIDIA, credencial, `.env`, banco ou mutação. Codex confirmou 9/9 testes novos, 32/32 existentes, lint, typecheck e diff limpo.

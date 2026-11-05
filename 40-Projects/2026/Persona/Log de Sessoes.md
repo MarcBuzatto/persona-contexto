@@ -301,9 +301,9 @@ O fluxo configurado exige sincronização antes da leitura, consulta seletiva de
 
 **Compress.** [FATO] O commit local `1e7ad02` do branch `wt/backend-lote1` adicionou `pg_temp.confere` ao teste RLS: os passos 1, 5, 6 e 9 agora comparam o `jsonb` obtido com o esperado e reprovam automaticamente em divergência ou `NULL`. O diagnóstico não abortivo do passo 8 foi preservado; uma falha de exclusão deixa as linhas existentes e é convertida em reprovação pelo passo 9. Comentários e rodapé foram alinhados, e R2 passou a separar a ausência factual de paginação do limite remoto ainda pendente.
 
-**Preserve.** [PENDENTE] O SQL continua sem prova de parser ou execução. O commit está apto a congelamento e Verificação Independente, mas migration e teste no Supabase permanecem gates explícitos de Yan. Na execução, devem ser usadas duas contas descartáveis de QA, nunca a conta principal; a checagem de privilégios cobre `SELECT/INSERT/UPDATE/DELETE`, não as demais capacidades de tabela como `TRUNCATE/REFERENCES/TRIGGER`.
+**Atualização da sessão.** [FATO] O commit local `cb0f3ba` passou a exigir duas contas descartáveis de QA e ampliou `has_table_privilege` para `SELECT/INSERT/UPDATE/DELETE/TRUNCATE/REFERENCES/TRIGGER`, sem push ou execução. [PENDENTE] A afirmação de `REVOKE ALL` ainda depende da versão: PostgreSQL 17 adicionou `MAINTAIN`, inexistente em 15/16, e a versão do projeto não foi consultada. O teste deve tratar `MAINTAIN` condicionalmente por `server_version_num` ou limitar explicitamente a afirmação aos sete privilégios compatíveis.
 
-**Resume.** Próximo passo concreto: o Orquestrador congelar `1e7ad02`, enviar o patch à Verificação e só depois apresentar a Yan o pedido separado para aplicar a migration e executar o teste com duas contas descartáveis no projeto de QA de [[MVP v2 - Refundacao]].
+**Resume.** Próximo passo concreto: o agente de Backend corrigir a compatibilidade PostgreSQL 15/16/17 em novo commit local; depois o Orquestrador congelar o SHA e enviar à Verificação antes do gate separado de migration e teste no projeto de QA de [[MVP v2 - Refundacao]].
 
 ### 2026-11-04 — Claude Code / Codex / Yan — Revisão do incremento 1 do Agente NVIDIA
 

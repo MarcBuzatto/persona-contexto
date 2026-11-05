@@ -309,3 +309,9 @@ O fluxo configurado exige sincronização antes da leitura, consulta seletiva de
 [HIPÓTESE] Distribuição semanal simulada conforme autorização de Marc, separada dos marcos documentados. Preços históricos e cálculo financeiro permanecem hipóteses, sem alegar receita ou validação.
 [FATO] Duas revisões por documento: conteúdo/fontes e inspeção visual das 10 páginas do trabalho e 8 do cronograma. Fontes resumidas em [[Fontes externas do trabalho PAL 2026]].
 [PENDENTE] Confirmar divergência do nome de Bruno, eventual inclusão de Pablo e prazo escolar. Próximo passo: equipe revisar esses dados e substituir tarefas simuladas por registros reais quando disponíveis.
+
+### 2026-11-04 — ChatGPT / Marc — Revisão docente e correção de escopo do cronograma
+
+[FATO] Aplicados ao trabalho do Persona os comentários pertinentes do HERE4LIFE; treze páginas revisadas. Criado anexo financeiro editável com resultados dependentes de dados e teste sintético de fórmulas. Ver [[Revisao docente PAL 2026]].
+[DECISÃO] Marc exige o modelo exato do Senac em planilha. O cronograma Word anterior fica apenas como histórico e não serve para entrega.
+[PENDENTE] Download/duplicação do original Canva bloqueado por login; acesso ao Teams e configuração global na máquina de Marc indisponíveis. Nenhuma configuração global foi instalada. Próximo passo: obter acesso ao original e aos arquivos escolares, preencher o cronograma e revisar conteúdo e visual antes de publicar.

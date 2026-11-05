@@ -15,8 +15,9 @@ updated: 2026-11-04
 
 ## Arquivos editáveis
 
-- [Trabalho escrito](Entregas/Persona_Trabalho_Escrito.docx): capa, sumário e as oito seções do modelo. 10 páginas.
-- [Cronograma](Entregas/Persona_Cronograma_Abril_Novembro_2026.docx): integrantes nas linhas, semanas nas colunas, uma página por mês de abril até 04/11/2026. 8 páginas.
+- [Trabalho escrito](Entregas/Persona_Trabalho_Escrito.docx): capa, sumário e as oito seções do modelo. 13 páginas.
+- [Cronograma antigo em Word](Entregas/Persona_Cronograma_Abril_Novembro_2026.docx): preservado como histórico, mas REJEITADO quanto ao formato. Não usar na entrega. A versão válida deverá preencher o modelo exato do Senac em planilha; está pendente de acesso/exportação do original.
+- [Planejamento financeiro](Entregas/Persona_Planejamento_Financeiro.xlsx): anexo editável com fórmulas e campos pendentes; não é o cronograma.
 - [Documento original HERE4LIFE](Modelos/Documento_Tecnico_HERE4LIFE_Empreenda.docx): preservado sem alterações, apenas como modelo estrutural.
 - [Atalho original do cronograma](Modelos/Cronograma.download): o arquivo recebido é um atalho de internet, não uma planilha exportada.
 - [Cronograma original no Canva](https://www.canva.com/design/DAHDrOectsM/bP5ufb_9Wl81-ydlbF9TuA/edit): consultado visualmente em 04/11/2026. Não foi alterado.
@@ -45,3 +46,9 @@ Os vídeos do [[Empreenda Flix - indice de videos]] foram localizados, mas não 
 [PENDENTE] Confirmar com a equipe a divergência Bruno Neiva/Bruno Puntoni e a eventual orientação de Pablo Lemos, já existentes em [[Equipe]]. Foram usados o nome da lista principal e os dois orientadores confirmados. Confirmar prazo de entrega escolar e atualizar resultados apenas quando houver evidência.
 
 Próximo passo: equipe conferir esses dados pessoais e registrar as entregas reais no cronograma antes de apresentá-lo ao professor.
+
+## Revisão após os comentários do professor
+
+Ver [[Revisao docente PAL 2026]] para a aplicação dos nove comentários, as duas revisões e as lacunas restantes. As referências foram ampliadas com ANPD e CSN. O documento escrito foi atualizado; o cronograma não deve ser considerado concluído.
+
+[PENDENTE] Acesso à equipe PAL e à pasta Persona no Teams, exportação/duplicação do modelo exato do Canva e configuração dos clientes de IA na máquina de Marc. Nenhuma dessas ações foi executada nesta sessão. A configuração registrada em 28/10 pertence à máquina de Yan e não comprova configuração na máquina de Marc.

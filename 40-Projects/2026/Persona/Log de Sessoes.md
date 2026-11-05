@@ -341,3 +341,11 @@ O fluxo configurado exige sincronização antes da leitura, consulta seletiva de
 **Preserve.** [PENDENTE] O lote ainda não deve ser integrado. Foi reproduzido que `gap.missing_facts` e `gap.registration_suggestion`, textos livres exibidos ao usuário e passíveis de persistência no fluxo Live, aceitam meta-comandos intactos porque `hasMetaCommand` cobre somente argumento, excerto e rascunho. A limitação geral da heurística lexical para paráfrases e outros idiomas continua corretamente documentada e não é apresentada como garantia absoluta.
 
 **Resume.** Próximo passo concreto: aplicar a mesma barreira lexical aos dois campos de `gap`, adicionar um teste adversarial, repetir as validações, criar novo commit local e reenviar o SHA congelado à Verificação Independente de [[MVP v2 - Refundacao]].
+
+### 2026-11-05 — Claude Code / Codex / Yan — Aceite técnico do incremento 1 do Agente NVIDIA
+
+**Compress.** [FATO] O commit local `489ec0d` do branch `wt/agente-nvidia-lote1` aplica `hasMetaCommand` a `gap.missing_facts` e `gap.registration_suggestion`, atualiza contrato e status e adiciona teste com dois payloads maliciosos e um controle legítimo. Codex reproduziu as rejeições e o controle e confirmou 13/13 testes novos, 32/32 existentes, lint, typecheck e `git diff --check` limpos.
+
+**Preserve.** [FATO] Nenhum achado bloqueador permanece dentro do incremento sintético read-only. O SHA está apto a congelamento e envio à Verificação Independente, mas isso não autoriza merge, push, rota, chamada NVIDIA, credencial, `.env`, banco, Preview ou Production. A heurística lexical continua limitada a padrões conhecidos em português e inglês, o recall não foi medido e nenhuma inferência real foi comprovada.
+
+**Resume.** Próximo passo concreto: o Orquestrador congelar `489ec0d89b43d47bb858ba95ea44ab8cecc3351a`, incluir o teste do agente no comando agregado em sua própria integração e enviar o patch à Verificação Independente antes de propor merge de [[MVP v2 - Refundacao]].

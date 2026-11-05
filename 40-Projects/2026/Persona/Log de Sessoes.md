@@ -275,6 +275,8 @@ O fluxo configurado exige sincronização antes da leitura, consulta seletiva de
 
 **Preserve.** [PENDENTE] Antes do aceite documental, o mapa precisa enumerar fielmente os estados: T4.3 declara 28, mas o objeto `ESC` contém 27 e inclui `det-e2`/`det-e3`; T4.5 usa enumeração abreviada; T4.8 resume 19 cenários explícitos em poucos grupos genéricos. A frase “sem backend nem contrato de produto” também deve distinguir a ausência de backend/integração da visão do Agente já aprovada pela LD-026. Os `.woff2` estão fora do pacote Git, mas permanecem nas cópias oficiais locais registradas em `MANIFEST.json`; não é necessário buscá-los novamente na internet.
 
+**Correção factual — 05/11/2026.** [REVOGADO] A contagem anterior de 19 cenários totais para T4.8 estava incompleta. O `GROUPS` contém 19 cenários em Conversa, Respostas e Falhas, mais `recolhido` no grupo Painel, totalizando 20.
+
 **Resume.** Próximo passo concreto: o agente de Interface criar novo commit local corrigindo o inventário de estados, a redação do contrato do Agente, a proveniência das fontes e os gates por fatia; depois o Orquestrador substituir o SHA congelado e reenviar à Verificação Independente de [[MVP v2 - Refundacao]].
 
 ### 2026-11-04 — Yan / Codex — Capturas do redesign organizadas
@@ -315,3 +317,11 @@ O fluxo configurado exige sincronização antes da leitura, consulta seletiva de
 [FATO] Aplicados ao trabalho do Persona os comentários pertinentes do HERE4LIFE; treze páginas revisadas. Criado anexo financeiro editável com resultados dependentes de dados e teste sintético de fórmulas. Ver [[Revisao docente PAL 2026]].
 [DECISÃO] Marc exige o modelo exato do Senac em planilha. O cronograma Word anterior fica apenas como histórico e não serve para entrega.
 [PENDENTE] Download/duplicação do original Canva bloqueado por login; acesso ao Teams e configuração global na máquina de Marc indisponíveis. Nenhuma configuração global foi instalada. Próximo passo: obter acesso ao original e aos arquivos escolares, preencher o cronograma e revisar conteúdo e visual antes de publicar.
+
+### 2026-11-05 — Claude Code / Codex / Yan — Correção do mapa de migração da Interface
+
+**Compress.** [FATO] O commit local `d4a1e3b` substitui `8c5ef15` no branch `wt/interface-lote1`, sem push e com somente `MAPA_TELAS.md` e `STATUS.md` alterados. A revisão confirmou T4.3 com 27 estados, T4.5 com 36 e T4.8 com 20; a redação do Agente distingue LD-026 do contrato técnico, as fontes apontam para as cópias oficiais locais, os gates foram separados por fatia e a regra Carbon/Lucide permanece explícita.
+
+**Preserve.** [FATO] O pacote congelado continua com 285/285 arquivos conferindo, `git diff --check` está limpo e nenhum código de produto foi tocado. A expressão “T4.5 sem exportação até a 4.8” deve ser lida como decisão §4.8; a ambiguidade é editorial e não bloqueia o envio à Verificação Independente. Esta revisão documental não aprova visual, merge, push, Preview ou implementação em [[MVP v2 - Refundacao]].
+
+**Resume.** Próximo passo concreto: o Orquestrador substituir o SHA congelado da Interface por `d4a1e3bb1390b8061838f7a0ad8ef98e90f0d304` e enviar o diff à Verificação Independente antes de qualquer integração.

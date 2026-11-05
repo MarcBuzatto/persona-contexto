@@ -333,3 +333,11 @@ O fluxo configurado exige sincronização antes da leitura, consulta seletiva de
 **Preserve.** [FATO] O pacote congelado continua com 285/285 arquivos conferindo, `git diff --check` está limpo e nenhum código de produto foi tocado. A expressão “T4.5 sem exportação até a 4.8” deve ser lida como decisão §4.8; a ambiguidade é editorial e não bloqueia o envio à Verificação Independente. Esta revisão documental não aprova visual, merge, push, Preview ou implementação em [[MVP v2 - Refundacao]].
 
 **Resume.** Próximo passo concreto: o Orquestrador substituir o SHA congelado da Interface por `d4a1e3bb1390b8061838f7a0ad8ef98e90f0d304` e enviar o diff à Verificação Independente antes de qualquer integração.
+
+### 2026-11-05 — Claude Code / Codex / Yan — Nova revisão do incremento 1 do Agente NVIDIA
+
+**Compress.** [FATO] O commit corretivo local `80feabe` do branch `wt/agente-nvidia-lote1` adicionou validação estrita do schema, barreira lexical de meta-comandos e desempate determinístico por ID, sem push, rota, chamada NVIDIA, credencial, `.env`, banco ou mutação. Codex confirmou após o amend 12/12 testes novos, 32/32 existentes, lint, typecheck e `git diff --check` limpos; as três falhas anteriores foram corrigidas.
+
+**Preserve.** [PENDENTE] O lote ainda não deve ser integrado. Foi reproduzido que `gap.missing_facts` e `gap.registration_suggestion`, textos livres exibidos ao usuário e passíveis de persistência no fluxo Live, aceitam meta-comandos intactos porque `hasMetaCommand` cobre somente argumento, excerto e rascunho. A limitação geral da heurística lexical para paráfrases e outros idiomas continua corretamente documentada e não é apresentada como garantia absoluta.
+
+**Resume.** Próximo passo concreto: aplicar a mesma barreira lexical aos dois campos de `gap`, adicionar um teste adversarial, repetir as validações, criar novo commit local e reenviar o SHA congelado à Verificação Independente de [[MVP v2 - Refundacao]].

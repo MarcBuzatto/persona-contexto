@@ -405,3 +405,11 @@ O fluxo configurado exige sincronização antes da leitura, consulta seletiva de
 **Preserve.** [FATO] Restam só S4 no Backend (BK3-1: comportamento do CLI e do SQL Editor em falha parcial é HYPOTHESIS; BK3-2: restos de redação) e, no Agente, AG2-2 (S3, server action sem teste), AG2-3 (S4, `server-only` só por convenção) e AG3-1 (S4, mutante de sinal eterno trava o `npm test`). IF3-1 (S3) segue aguardando Yan. [PENDENTE] Chave NVIDIA ausente na Vercel, aplicação da B-1 (método e banco), parser do Live (A-1/A-7/L-1), tela real, aceite visual. Nada foi integrado em `main` além do já registrado, empurrado, migrado, executado em SQL ou configurado com credencial; `origin/main` permanece em `06de045`.
 
 **Resume.** Próximo passo concreto: Yan decidir IF3-1, se BK3-1/BK3-2/AG3-1 viram ressalva ou nova passada, e a ordem da integração local de Backend, Agente e Interface, em [[MVP v2 - Refundacao]].
+
+### 2026-11-08 — Claude Code / Yan — Lote 2: integração local na main
+
+**Compress.** [DECISÃO] Yan aprovou a ordem Backend, Agente, Interface e o fast-forward da main local. [FATO] Backend `33373ae`, Agente `9abf927` e Interface `d71f2a7` foram juntados em `integracao/lote2` sem conflito, e a `main` local avançou por `--ff-only` de `7d180c1` para `7da0be0` (mais um commit de registro). No HEAD integrado: `npm test` 64/64, lint, typecheck e build com saída 0, sem `.env`; sem chave real; parser do Live (`response-schema.ts`) e `lib/agent` inalterados. [FATO] A `main` local agora contém o Live na NVIDIA e a migração B-1 (arquivo, não aplicada).
+
+**Preserve.** [RISCO] Push da `main` à Production sem `NVIDIA_API_KEY` na Vercel quebra o Live e publicaria material interno em repositório público (P-1/P-2 da auditoria); `origin/main` segue em `06de045`. [PENDENTE] IF3-1 (S3), método de aplicação da B-1 e teste de RLS no QA, chave NVIDIA rotacionada e teste em Preview, ADR Groq→NVIDIA, parser do Live (A-1/A-7/L-1), BK3-1/BK3-2/AG3-1 (S4), AG2-2 (S3), aceite visual. Nada foi empurrado, migrado, executado em SQL ou configurado com credencial.
+
+**Resume.** Próximo passo concreto: Yan decidir IF3-1 e o rumo do Preview (chave e método da B-1), ou autorizar uma passada curta nas ressalvas S4, em [[MVP v2 - Refundacao]].

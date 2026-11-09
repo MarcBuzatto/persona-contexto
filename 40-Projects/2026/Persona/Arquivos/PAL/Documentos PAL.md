@@ -16,11 +16,12 @@ updated: 2026-11-09
 ## Arquivos editáveis
 
 - [Trabalho escrito](Entregas/Persona_Trabalho_Escrito.docx): capa, sumário e as oito seções do modelo. 13 páginas.
-- [Cronograma antigo em Word](Entregas/Persona_Cronograma_Abril_Novembro_2026.docx): preservado como histórico, mas REJEITADO quanto ao formato. Não usar na entrega. A versão válida deverá preencher o modelo exato do Senac em planilha; está pendente de acesso/exportação do original.
+- [Cronograma antigo em Word](Entregas/Persona_Cronograma_Abril_Novembro_2026.docx): preservado como histórico, mas REJEITADO quanto ao formato. Não usar na entrega. A versão válida é a planilha do Canva registrada abaixo.
 - [Planejamento financeiro](Entregas/Persona_Planejamento_Financeiro.xlsx): anexo editável com fórmulas e campos pendentes; não é o cronograma.
 - [Documento original HERE4LIFE](Modelos/Documento_Tecnico_HERE4LIFE_Empreenda.docx): preservado sem alterações, apenas como modelo estrutural.
 - [Atalho original do cronograma](Modelos/Cronograma.download): o arquivo recebido é um atalho de internet, não uma planilha exportada.
-- [Cronograma original no Canva](https://www.canva.com/design/DAHDrOectsM/bP5ufb_9Wl81-ydlbF9TuA/edit): consultado visualmente em 04/11/2026. Não foi alterado.
+- [Cronograma original no Canva](https://www.canva.com/design/DAHDrOectsM/bP5ufb_9Wl81-ydlbF9TuA/edit): modelo oficial do Senac, preservado sem alterações.
+- [Cronograma PAL — Persona 2026 no Canva](https://www.canva.com/d/ExiDbDVWDOHRZtm): versão editável atual, design `DAHabUwMEbE`, criada a partir da estrutura horizontal do modelo oficial.
 
 ## Como contribuir
 
@@ -51,11 +52,15 @@ Próximo passo: equipe conferir esses dados pessoais e registrar as entregas rea
 
 Ver [[Revisao docente PAL 2026]] para a aplicação dos nove comentários, as duas revisões e as lacunas restantes. As referências foram ampliadas com ANPD e CSN. O documento escrito foi atualizado; o cronograma não deve ser considerado concluído.
 
-[PENDENTE] Acesso à equipe PAL e à pasta Persona no Teams, exportação/duplicação do modelo exato do Canva e configuração dos clientes de IA na máquina de Marc. Nenhuma dessas ações foi executada nesta sessão. A configuração registrada em 28/10 pertence à máquina de Yan e não comprova configuração na máquina de Marc.
+[PENDENTE] Acesso à equipe PAL e à pasta Persona no Teams e configuração dos clientes de IA na máquina de Marc. A duplicação e a adaptação do cronograma no Canva foram tratadas em 09/11/2026. A configuração registrada em 28/10 pertence à máquina de Yan e não comprova configuração na máquina de Marc.
 
 ## Nova entrega solicitada por Yan em 09/11/2026
 
-[DECISÃO] A instrução atual de Yan substitui a exigência anterior de reproduzir exatamente a planilha do Senac. O cronograma novo deve usar a lógica visual do Canva — integrantes nas linhas e recortes de tempo nas colunas — sem precisar ser idêntico à referência. O arquivo anterior permanece preservado como histórico.
+[DECISÃO REVOGADA EM 09/11/2026] A orientação de que o cronograma não precisava ser idêntico à referência foi substituída por nova instrução de Yan: o cronograma deve seguir a estrutura e o padrão da planilha oficial do Senac e ser entregue no Canva. O arquivo anterior em Word permanece preservado somente como histórico.
+
+[FATO] O cronograma oficial do Persona foi produzido como Canva Sheet editável no design `DAHabUwMEbE`, título `Cronograma PAL — Persona 2026`. O original `DAHDrOectsM` permaneceu intacto. A planilha conserva o padrão horizontal de integrantes nas linhas, semanas/datas nas colunas, cabeçalhos azul-marinho, células de atividade verdes e legenda lateral. O arquivo-fonte editável também foi salvo em `C:\Users\yansi\Downloads\Cronograma_PAL_Persona_2026.xlsx`.
+
+[FATO] A edição direta de uma cópia do Canva Sheet mostrou seleção instável de intervalos; as alterações indevidas foram desfeitas e essa cópia não é a entrega. Para preservar a estrutura, foi gerada uma planilha XLSX com o mesmo padrão e importada pelo próprio Canva como Sheet. A versão válida é somente `DAHabUwMEbE`.
 
 [FATO] Yan definiu diretamente as responsabilidades da equipe escolar: Yan — desenvolvimento da ideia, pitch e design completo; Marc — backend, validação e reconstrução do pitch; João Pedro — documentação técnica e análise de público; Bruno Puntonni — mercado, satisfação e uso; Fernando — apoio documental e às fontes de Bruno; Gustavo — apoio documental e às fontes de João Pedro. Esta instrução atual resolve, para estes entregáveis, a divergência histórica do nome de Bruno; não altera retroativamente outros materiais sem nova revisão.
 

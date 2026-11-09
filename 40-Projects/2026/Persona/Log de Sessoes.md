@@ -453,3 +453,11 @@ O fluxo configurado exige sincronização antes da leitura, consulta seletiva de
 **Preserve.** [RISCO] Live e Score exigem `NVIDIA_API_KEY`; push à Production sem ela quebra os dois; `origin/main` segue em `06de045` e o repositório é público. [PENDENTE] IF7-1, telas Score/Artefatos/Diagnóstico/Configurações, AG6-2/AG6-3 e M3 (Diário) a M6; de Yan: aceite visual, banco de QA com Fase 9, B-1 e teste de RLS (R1) e método de aplicação, chave NVIDIA rotacionada só no Preview, publicação, primeiro Preview. Nada empurrado, migrado, executado em SQL ou configurado com credencial.
 
 **Resume.** Próximo passo concreto: o Orquestrador atribui o Lote 5 às segundas conversas; Yan envia as pendências 5, 6, 7, 8, 11 e 12, em [[MVP v2 - Refundacao]].
+
+### 2026-11-09 — Codex / Yan — Cronograma PAL do Persona no Canva
+
+**Compress.** [DECISÃO] Yan revogou a flexibilidade anterior e determinou que o cronograma siga a estrutura e o padrão do modelo oficial do Senac no Canva. [FATO] O original `DAHDrOectsM` foi preservado. Foi criado o Canva Sheet editável `DAHabUwMEbE`, título `Cronograma PAL — Persona 2026`, com integrantes nas linhas, datas de abril a novembro nas colunas e atividades baseadas somente na distribuição de responsabilidades fornecida por Yan.
+
+**Preserve.** [FATO] A edição direta de uma cópia do Canva Sheet selecionou intervalos indevidos; as alterações foram desfeitas e essa cópia não é a entrega. Para manter a estrutura visual, foi produzido `C:\Users\yansi\Downloads\Cronograma_PAL_Persona_2026.xlsx` e importado pelo próprio Canva como Sheet. A versão válida é https://www.canva.com/d/ExiDbDVWDOHRZtm. O Word retrospectivo anterior permanece apenas como histórico e não deve ser entregue como cronograma oficial.
+
+**Resume.** Próximo passo concreto: Yan revisar visualmente a planilha no Canva e indicar apenas correções factuais de datas ou distribuição semanal; não retornar ao modelo em Word.

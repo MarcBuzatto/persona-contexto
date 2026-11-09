@@ -6,7 +6,7 @@ project: "[[Persona]]"
 tags:
   - pal
   - documentos
-updated: 2026-11-04
+updated: 2026-11-09
 ---
 
 # Documentos do PAL
@@ -52,3 +52,23 @@ Próximo passo: equipe conferir esses dados pessoais e registrar as entregas rea
 Ver [[Revisao docente PAL 2026]] para a aplicação dos nove comentários, as duas revisões e as lacunas restantes. As referências foram ampliadas com ANPD e CSN. O documento escrito foi atualizado; o cronograma não deve ser considerado concluído.
 
 [PENDENTE] Acesso à equipe PAL e à pasta Persona no Teams, exportação/duplicação do modelo exato do Canva e configuração dos clientes de IA na máquina de Marc. Nenhuma dessas ações foi executada nesta sessão. A configuração registrada em 28/10 pertence à máquina de Yan e não comprova configuração na máquina de Marc.
+
+## Nova entrega solicitada por Yan em 09/11/2026
+
+[DECISÃO] A instrução atual de Yan substitui a exigência anterior de reproduzir exatamente a planilha do Senac. O cronograma novo deve usar a lógica visual do Canva — integrantes nas linhas e recortes de tempo nas colunas — sem precisar ser idêntico à referência. O arquivo anterior permanece preservado como histórico.
+
+[FATO] Yan definiu diretamente as responsabilidades da equipe escolar: Yan — desenvolvimento da ideia, pitch e design completo; Marc — backend, validação e reconstrução do pitch; João Pedro — documentação técnica e análise de público; Bruno Puntonni — mercado, satisfação e uso; Fernando — apoio documental e às fontes de Bruno; Gustavo — apoio documental e às fontes de João Pedro. Esta instrução atual resolve, para estes entregáveis, a divergência histórica do nome de Bruno; não altera retroativamente outros materiais sem nova revisão.
+
+[FATO] Foram criados três novos arquivos editáveis em `C:\Users\yansi\OneDrive\Persona_Geral\Persona Empreenda\06_projeto_escrito\`:
+
+- `Persona_Cronograma_Retrospectivo_2026.docx` — tabela em paisagem, com quatro recortes de abril a 8 de novembro, marcos documentados e nota metodológica;
+- `Persona_Documentacao_Tecnica_Completa_2026.docx` — arquitetura, módulos, dados, segurança, IA, testes, limites, F.T.P. e próximos passos;
+- `Persona_Projeto_Escrito_ABNT_2026.docx` — as oito seções solicitadas, texto corrido, formatação acadêmica e imagens horizontais da nova versão.
+
+[FATO] A referência do Canva foi consultada em modo somente leitura e confirmou a estrutura de pessoas por linhas, datas por colunas e atividades nas células. Os novos documentos usam apenas imagens 1920×1080 de `Prinst_persona/04_apresentacao_16x9`. As imagens são identificadas como propostas visuais da nova versão e não como prova de integração funcional.
+
+[FATO] Verificação estrutural com `python-docx`: os três arquivos são DOCX válidos; o cronograma contém uma tabela 7×5 em A4 paisagem; a documentação técnica contém cinco imagens; o projeto escrito contém três imagens e uma tabela de responsabilidades; os documentos em retrato usam margens 3/2/2/3 cm. A tentativa de pré-visualização completa no Word foi interrompida por uma janela transitória do aplicativo; a revisão visual final no Word permanece recomendada antes da entrega escolar, sobretudo para atualizar o sumário e conferir quebras de página.
+
+[PENDENTE] Confirmar o prazo escolar e se a capa deve manter apenas os dois orientadores já confirmados. Antes da entrega, abrir os dois documentos longos no Word, atualizar o campo de sumário e revisar a paginação.
+
+Próximo passo: Yan revisar o cronograma e a documentação técnica; qualquer correção factual nesses dois documentos deve ser incorporada ao projeto escrito antes da versão final entregue ao professor.

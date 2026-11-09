@@ -437,3 +437,11 @@ O fluxo configurado exige sincronização antes da leitura, consulta seletiva de
 **Preserve.** [RISCO] A `main` local contém o Live na NVIDIA e a B-1 como arquivo; push à Production sem `NVIDIA_API_KEY` na Vercel quebra o Live e publica material interno em repositório público; `origin/main` segue em `06de045`. [PENDENTE] Aceite visual; banco QA, migrações Fase 9 e B-1, teste de RLS (R1) e método de aplicação; chave NVIDIA rotacionada e Preview; estratégia de publicação; migração de Diário/Score/Artefatos para NVIDIA (depende do ADR); S4 BK/AG restantes só os do Lote 3. Nada foi empurrado, migrado, executado em SQL ou configurado com credencial.
 
 **Resume.** Próximo passo concreto: aguardar os commits do Lote 3, congelar cada SHA e pedir revisão independente, em [[MVP v2 - Refundacao]].
+
+### 2026-11-09 — Codex / Yan — Cronograma, documentação técnica e projeto escrito do PAL
+
+**Compress.** [FATO] A pedido de Yan, foram criados três DOCX em `Persona Empreenda/06_projeto_escrito`: cronograma retrospectivo, documentação técnica completa e projeto escrito com as oito seções do modelo escolar. A referência do Canva foi conferida em modo somente leitura; o cronograma replica sua lógica de integrantes × tempo, sem tentar ser uma cópia idêntica. A atribuição individual usa exclusivamente a lista atual fornecida por Yan, inclusive `Bruno Puntonni`.
+
+**Preserve.** [FATO] O projeto escrito e a documentação técnica usam texto corrido, Times New Roman, títulos pretos, margens acadêmicas e imagens somente da pasta horizontal 1920×1080 da nova versão. As imagens são rotuladas como proposta visual, não como prova de implementação. Dados quantitativos foram apresentados com limites: seis respostas preliminares reais; 94 registros sintéticos excluídos da validação; piloto exploratório `n=3`, sem compra ou validação de preço. [FATO] Verificação estrutural dos DOCX aprovada; pré-visualização integral no Word não foi concluída por uma janela transitória do aplicativo.
+
+**Resume.** Próximo passo concreto: Yan revisar primeiro o cronograma e a documentação técnica; depois, atualizar o sumário no Word, conferir paginação e incorporar eventuais correções factuais ao projeto escrito antes da entrega escolar. Ver [[Documentos PAL]].
